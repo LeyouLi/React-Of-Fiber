@@ -5,9 +5,9 @@
 ---
 ### Fiber 架构渲染 DOM 过程
 
-DOM 初始渲染：  virtualDOM -> Fiber -> Fiber[] -> DOM
+- DOM 初始渲染：  virtualDOM -> Fiber -> Fiber[] -> DOM
 
-DOM 更新操作：  newFiber vs oldFiber -> Fiber[] -> DOM
+- DOM 更新操作：  newFiber vs oldFiber -> Fiber[] -> DOM
 
 ---
 ## 单个 Fiber 对象包含的属性
