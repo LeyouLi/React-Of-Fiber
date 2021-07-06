@@ -11,6 +11,7 @@ let pendingCommit  = null; // 等待被提交的Fiber[]
 
 // 将fiber[] 转换成真实的 DOM 对象
 const commitAllWork = fiber => {
+  // 循环 effets 数组 构建 DOM 节点树
   fiber.effects.forEach(item => {
     if (item.effectsTag === 'placement') {
       item.parent.stateNode.appendChild(item.stateNode);
